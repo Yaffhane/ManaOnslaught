@@ -10,7 +10,7 @@
 #ifndef TILE_H
 #define TILE_H
 
-#include "Unit.h"
+#include "Perso.h"
 
 using namespace std;
 
@@ -21,13 +21,13 @@ public:
     Tile(const Tile& orig);
     virtual ~Tile();
     
-    void updateUnitOnTile(Unit * u);
+    void updateUnitOnTile(Perso * u);
     void clearUnit();
-    void getUnit();
+    Perso* getUnit();
     
 private:
     int cost; // coût en pm pour venir sur la case
-    Unit * unitOnTile; // unit présent sur la case
+    Perso * unitOnTile; // unit présent sur la case
 
 };
 

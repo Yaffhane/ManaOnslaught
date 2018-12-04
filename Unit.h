@@ -16,7 +16,8 @@ using namespace std;
         
 class Unit {
 public:
-    Unit();
+    Unit(int hp=200, int mp=100, int str=10, int it=10, int fh=10, int dex=10,
+            int pDef=5, int mDef=2,int pa=3, int pm=3);
     Unit(const Unit& orig);
     virtual ~Unit();
     
@@ -44,7 +45,7 @@ protected:
     int mp, mpMax;
     
     // statistiques, à mettre sous forme de tab ?
-    int strengh, inteligence, faith, dexterity, pDefence, mDefence;
+    int strength, intelligence, faith, dexterity, pDefence, mDefence;
     float crit; // 0 <= crit <= 1
 
     // skills

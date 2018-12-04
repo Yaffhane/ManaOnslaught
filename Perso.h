@@ -10,6 +10,8 @@
 
 #include "Unit.h"
 #include "Job.h"
+#include <iostream>  
+
 
 using namespace std;
 
@@ -17,7 +19,12 @@ using namespace std;
 class Perso: public Unit {
 public:
    
+    Perso(string name, string team, int hp=200, int mp=100, int str=10,
+            int it=10, int fh=10, int dex=10, int pDef=5, int mDef=2,
+            int pa=3, int pm=3);
+    
     Perso();
+    
     Perso(const Perso& orig);
     virtual ~Perso();
     
@@ -25,6 +32,8 @@ public:
     string getName();
     string getTeam();
     Job getJob();
+    
+    friend ostream& operator<<(ostream& os, const Perso& perso);
     
 private:
     double _id;

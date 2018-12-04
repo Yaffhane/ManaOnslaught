@@ -7,7 +7,6 @@
  */
 
 #include <cstdlib>
-
 #include "GameMap.h"
 
 using namespace std;
@@ -16,12 +15,15 @@ using namespace std;
 int main(int argc, char** argv) {
     
     // debug mouvement unit
-    Unit monPetitPerso;
+    Perso monPetitPerso("Mydude", "teamMinou");
     GameMap world;
     vector<int> size = {10, 10};
     
     world.mapInit(size);
     world.placeUnit({0,1}, &monPetitPerso);
+    world.moveUnit({3,1}, {0,1}, &monPetitPerso);
+    
+    cout<< *world.getTile({3,1})->getUnit();
     
     return 0;
 }

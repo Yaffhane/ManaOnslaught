@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   GameMap.h
  * Author: iaphanemekki-felix
@@ -27,11 +21,14 @@ public:
     virtual ~GameMap();
     
     void mapInit(vector<int> size);
-    void moveUnit(vector<int> newCoordinates, vector<int> oldCoordinates, Unit* unit);
-    void placeUnit(vector<int> newCoordinates, Unit* unit);
-    Unit * targetUnit(vector<int> coordinates); // retourn l'unit sur la case sélectionné pour caster un sort dessus ou la sélectionner
+    void moveUnit(vector<int> newCoordinates, vector<int> oldCoordinates, Perso* unit);
+    void placeUnit(vector<int> newCoordinates, Perso* unit);
+    Unit* targetUnit(vector<int> coordinates); // retourne l'unit sur la case sélectionnée pour caster un sort dessus ou la sélectionner
     
     void setGamemode(int newGameMode);
+    
+    map<vector<int>, Tile*> getMapState(); // retourne la map
+    Tile* getTile(vector<int> coordinates); // retourne l'addresse de la case sélectionnée
     
 protected:
     int gamemode;

@@ -13,7 +13,20 @@
 
 #include "Unit.h"
 
-Unit::Unit() {
+Unit::Unit(int hp, int mp, int str, int it,int fh, int dex, int pDef, int mDef,
+            int pa, int pm){
+    this->hp=hp;
+    this->hpMax=hp;
+    this->mp=mp;
+    this->mpMax=mp;
+    this->strength=str;
+    this->intelligence=it;
+    this->faith=fh;
+    this->dexterity=dex;
+    this->pDefence=pDef;
+    this->mDefence=mDef;
+    this->pa=pa;
+    this->pm=pm;
 }
 
 Unit::Unit(const Unit& orig) {

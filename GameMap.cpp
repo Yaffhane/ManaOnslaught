@@ -18,12 +18,12 @@ GameMap::GameMap(const GameMap& orig) {
 GameMap::~GameMap() {
 }
 
-void GameMap::moveUnit(vector<int> newCoordinates,vector<int> oldCoordinates, Unit* unit) {
+void GameMap::moveUnit(vector<int> newCoordinates,vector<int> oldCoordinates, Perso* unit) {
     this->field[newCoordinates]->updateUnitOnTile(unit);
     this->field[oldCoordinates]->clearUnit();
 }
 
-void GameMap::placeUnit(vector<int> newCoordinates, Unit* unit) {
+void GameMap::placeUnit(vector<int> newCoordinates, Perso* unit) {
     this->field[newCoordinates]->updateUnitOnTile(unit);
 }
 
@@ -33,4 +33,8 @@ void GameMap::mapInit(vector<int> size) {
             this->field[{i,j}] = new Tile  ;
         }
     }
+}
+
+Tile* GameMap::getTile(vector<int> coordinates){
+    return this->field[coordinates];
 }

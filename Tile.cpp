@@ -28,6 +28,10 @@ void Tile::clearUnit() {
     this->unitOnTile = NULL;
 }
 
-void Tile::updateUnitOnTile(Unit* u) {
+void Tile::updateUnitOnTile(Perso* u) {
     this->unitOnTile = u;
+}
+
+Perso* Tile::getUnit(){
+    return this->unitOnTile;
 }
