@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>ActiveSkill.h</itemPath>
+      <itemPath>AreaOfEffect.h</itemPath>
+      <itemPath>Engine.h</itemPath>
+      <itemPath>GameMap.h</itemPath>
+      <itemPath>Job.h</itemPath>
+      <itemPath>Perso.h</itemPath>
+      <itemPath>Skill.h</itemPath>
+      <itemPath>Tile.h</itemPath>
+      <itemPath>Unit.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>ActiveSkill.cpp</itemPath>
+      <itemPath>AreaOfEffect.cpp</itemPath>
+      <itemPath>Engine.cpp</itemPath>
+      <itemPath>GameMap.cpp</itemPath>
+      <itemPath>Job.cpp</itemPath>
+      <itemPath>Perso.cpp</itemPath>
+      <itemPath>Skill.cpp</itemPath>
+      <itemPath>Tile.cpp</itemPath>
+      <itemPath>Unit.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <commandlineTool>g++</commandlineTool>
+          <commandLine>-std=c++11</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </compileType>
+      <item path="ActiveSkill.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ActiveSkill.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AreaOfEffect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AreaOfEffect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Engine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Engine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GameMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Job.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Job.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Perso.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Perso.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Skill.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Skill.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Unit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Unit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles">
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </folder>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </compileType>
+      <item path="ActiveSkill.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ActiveSkill.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AreaOfEffect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AreaOfEffect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Engine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Engine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GameMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GameMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Job.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Job.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Perso.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Perso.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Skill.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Skill.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Unit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Unit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles">
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </folder>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -20,7 +20,7 @@ public:
     ActiveSkill();
     ActiveSkill(const ActiveSkill& orig);
     
-    void apply();
+    void computeEffect(vector<int> unitStats);
     
     virtual ~ActiveSkill();
     
@@ -31,6 +31,9 @@ protected:
     int baseDamage; // negative for healing
     int range;
     int manacost;
+    
+    string element;
+    int elementAffinity;
             
 };
 

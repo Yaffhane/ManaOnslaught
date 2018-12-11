@@ -23,7 +23,7 @@ public:
     
 protected:
     string jobName;
-    list<ActiveSkill> ActiveJobList ; // tout les sorts dispo pour le job
+    list<ActiveSkill> ActiveSkillJobList ; // tout les sorts dispo pour le job
 
 };
 

@@ -11,13 +11,14 @@
 
 #include "ActiveSkill.h"
 #include <list>
+#include <map>
 
 using namespace std;
         
 class Unit {
 public:
     Unit(int hp=200, int mp=100, int str=10, int it=10, int fh=10, int dex=10,
-            int pDef=5, int mDef=2,int pa=3, int pm=3);
+            int pDef=5, int mDef=2,int pa=3, int pm=3, float crit=0);
     Unit(const Unit& orig);
     virtual ~Unit();
     
@@ -35,8 +36,14 @@ public:
     int gethpMax();
     int getmpMax();
     
-    list<int> getStats();
+    map<string, int> getStats();
     float getCrit();
+    
+    // partie skill
+    bool applyCost(int manaCost=0, int pmCost=0, int paCost=0, int hpCost=0);
+    bool applyEffect(int damage/*, effect* buff*/);
+    
+    void consolePrint();
     
 protected:
     
@@ -45,7 +52,7 @@ protected:
     int mp, mpMax;
     
     // statistiques, à mettre sous forme de tab ?
-    int strength, intelligence, faith, dexterity, pDefence, mDefence;
+    map<string, int> stats;
     float crit; // 0 <= crit <= 1
 
     // skills

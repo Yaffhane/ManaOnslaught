@@ -38,3 +38,7 @@ void GameMap::mapInit(vector<int> size) {
 Tile* GameMap::getTile(vector<int> coordinates){
     return this->field[coordinates];
 }
+
+void GameMap::ResolveEventSkill(Tile* targetedTile, Unit* castingUnit, ActiveSkill* castedSkill){
+    
+}

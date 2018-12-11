@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     world.placeUnit({0,1}, &monPetitPerso);
     world.moveUnit({3,1}, {0,1}, &monPetitPerso);
     
-    cout<< *world.getTile({3,1})->getUnit();
+    world.getTile({3,1})->getUnit()->consolePrint();
     
     return 0;
 }

@@ -17,3 +17,8 @@ ActiveSkill::ActiveSkill(const ActiveSkill& orig) {
 ActiveSkill::~ActiveSkill() {
 }
 
+void ActiveSkill::computeEffect(vector<int> unitStats) {
+    
+    
+}
+

@@ -11,6 +11,7 @@
 #define SKILL_H
 
 #include <string>
+#include <vector>
 #include "AreaOfEffect.h"
 
 using namespace std;
@@ -22,7 +23,7 @@ public:
     BaseSkill(const BaseSkill& orig);
     
     bool simulate(); // check si le skill est applicable
-    //virtual void apply() = 0; // applique les effets du skill
+    virtual void computeEffect(vector<int> unitStats) = 0; // applique les effets du skill
     
     virtual ~BaseSkill();
     

@@ -21,7 +21,7 @@ public:
    
     Perso(string name, string team, int hp=200, int mp=100, int str=10,
             int it=10, int fh=10, int dex=10, int pDef=5, int mDef=2,
-            int pa=3, int pm=3);
+            int pa=3, int pm=3, float crit=0);
     
     Perso();
     
@@ -33,7 +33,7 @@ public:
     string getTeam();
     Job getJob();
     
-    friend ostream& operator<<(ostream& os, const Perso& perso);
+    void consolePrint();
     
 private:
     double _id;

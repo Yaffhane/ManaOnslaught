@@ -8,9 +8,9 @@
 #ifndef GAMEMAP_H
 #define GAMEMAP_H
 
-#include <map>
 #include <vector>
 #include "Tile.h"
+#include "ActiveSkill.h"
 
 using namespace std;
 
@@ -29,6 +29,9 @@ public:
     
     map<vector<int>, Tile*> getMapState(); // retourne la map
     Tile* getTile(vector<int> coordinates); // retourne l'addresse de la case sélectionnée
+    
+    // section skill
+    void ResolveEventSkill(Tile* targetedTile, Unit* castingUnit, ActiveSkill* castedSkill);
     
 protected:
     int gamemode;
